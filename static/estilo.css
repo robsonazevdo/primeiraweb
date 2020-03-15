@@ -1,0 +1,19 @@
+  
+        h1 {color:black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 75px;}
+
+        div {  opacity: 0.6;
+        
+        }
+
+        h2 {color: black; font-family: Arial, Helvetica, sans-serif;font-size: 25px;}
+        div {background-color:rgb(231, 71, 191);}
+
+        body {
+           
+            background-image : url ('_imagens/fundo.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%
+            
+        
+        }
