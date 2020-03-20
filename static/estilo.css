@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -18,13 +19,17 @@ img {
 max-width: none;
 }
 
-.container{
+.container {
     width: 100%;
     float: left;
     padding: 3% 4% ;    
     text-align: center;
     background: #FFF0F5;
     margin-bottom: 5px;
+}
+
+.radius {
+    border-radius: 10px;
 }
 
 .bgGradient {
@@ -42,16 +47,12 @@ max-width: none;
     background-color: #ccc;
 }
 
-h1 {color:black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 75px;}
-
-
-h2 {color: black; font-family: Arial, Helvetica, sans-serif;font-size: 25px;}
 
 .logo {
     width: 56px;
     height: 56px;
     float: left;
-    background: url(_imagens/imagen1.png) center center/56px no-repeat;
+    background: url(_imagens/logomobile.png.png) center center/56px no-repeat;
 }
 
 .menu {
@@ -78,7 +79,7 @@ h2 {color: black; font-family: Arial, Helvetica, sans-serif;font-size: 25px;}
     height: 56px;
     float: right;
     border-radius: 56px;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     text-align: center;
     font-size: 2em;
@@ -94,8 +95,163 @@ h2 {color: black; font-family: Arial, Helvetica, sans-serif;font-size: 25px;}
     padding: 2%;
 }
 
-.menu ul li a{
+.menu ul li a {
     font-size: 2em;
     color: #fff;
 
 }
+/** BANNER **/
+
+
+.buttons {
+    margin-top: 3%;
+}
+
+.title {
+    width: 100%;
+}
+
+.banner .title h2 {
+    font-size: 2.5em;
+    color:#fff; 
+    font-weight: bold;
+}
+
+.banner .title h3 {
+    font-size: 1.5em;
+    color:#fff;
+
+}
+
+.banner {
+    background: url(_imagens/banner.png);
+}
+
+
+.btn {
+    width: 100%;
+    margin-top: 2%;
+    text-align: left;
+    padding: 3%;
+    font-size: 2em;
+}
+
+.btn i {
+    float: right;
+}
+
+.btsobre {
+    color: #fff;
+}
+
+.servicos {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.servicos img {
+    border-radius: 10px 10px 0px 0px;
+    width: 70%;
+}
+
+.servicos .textos {
+    padding: 7%;
+
+}
+
+.servicos .textos a {
+    font-size: 3em;
+    color: #4B0082;
+    font-weight: bold;
+}
+
+.servicos .textos h4 {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: bold;
+    margin-top: 1.5%;
+}
+
+
+.servicos .textos p {
+    font-size: 1em;
+    color: #000;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.title {
+    width: 100%;
+    padding: 2%;
+}
+.title h1 {
+    font-size: 2em;
+    color: #4B0082;
+}
+
+.title h2 {
+    font-size: 1.3em;
+    color: #666666;
+}
+
+.form {
+    width: 100%;
+    margin: 5% 0%
+}
+
+.form input {
+    width: 100%;
+    padding: 3%;
+}
+
+.btnewslatter {
+    margin-top: 3%;
+    color: #333;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #fff;
+}
+
+/** roda pé **/
+
+.Icon {
+    width: 100%;
+}
+
+.Icon a {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 3%;
+    opacity: 0.5;
+}
+
+.Icon a:last-child {
+    margin-right: 0;
+}
+
+.Icon a:hover {
+    opacity: 1;
+}
+
+.direitos {
+    margin-top: 3%;
+    color: #fff;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 480px) {
+    .logo {
+        width: 56px;
+        height: 56px;
+        float: left;
+        background: url(_imagens/logo.png) center center no-repeat;
+    }
+
+
+    .btn {
+        width: 45%
+    }
+
+    .btsobre {
+        float: right;
+    }

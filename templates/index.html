@@ -7,46 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href={{url_for('static' , filename="estilo.css")}} />
     <link rel="icon" href="{{url_for('static' , filename='_imagens/favicon')}}">
-    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!--<link rel="styleshheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css">-->
 
 <body>
 
     <title>SUSANA AZEVEDO</title>
 
-    
-    <h1 align="center" >
-        Sejam Bem Vindos! 
-
-    </h1>
-    <h2 align="center">
-        Ao Espaço Susana Azevedo 
-    </h2>
-    <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. 
-        Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. 
-        Richard McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, 
-        procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, 
-        e atravessando as cidades do mundo na literatura clássica, descobriu a sua origem. 
-        Lorem Ipsum vem das secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), por Cícero, 
-        escrito a 45AC. Este livro é um tratado na teoria da ética, muito popular durante a Renascença. 
-        A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32.
-
-        O pedaço mais habitual do Lorem Ipsum usado desde os anos 1500 é reproduzido abaixo para os interessados.
-         As secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" do Cícero também estão reproduzidos na sua forma original, 
-         acompanhados pela sua tradução em Inglês, versões da tradução de 1914 por H. Rackham.
-    </p>
-    <script>
-       console.log('ola mundo')
-
-    </script>
-<hr>
-
-<p>
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<hr>
 </head>
 
 
@@ -54,7 +22,7 @@
 <header class="container cabecalho">
 <a href="index.html" class="logo"></a>
 
-<button class="btmenu bgGradient"><i class="fas fa-bars" aria-hidden="true"></i>
+<button class="btmenu bgGradient"><i class="fas fa-bars"></i>
 
 </button>    
 
@@ -79,59 +47,109 @@
 <!--banner-->
 <div class="container banner">
 
+    <div class="title"> 
+
+        <h2>
+        Sejam Bem Vindos! 
+        </h2>
+
+        <h3>
+        Espaço Susana Azevedo 
+        </h3>
+
+    </div>
+
+    <div class="buttons" >
+
+        <button class="btn radius btcadastro bgwhite">Cadastro <i class="fas fa-arrow-right"></i></button>
+        <button class="btn bgBlack btsobre radius">Sobre <i class="far fa-question-circle"></i></button>
+
+    </div>
+
 </div>
 <!--fim banner -->
 
 <!--conteudo principal-->
 <main class="container conteudoprincipal">
 
+    <article class="servicos bgwhite radius">
+        <a href=""><img src="{{url_for('static' , filename='_imagens/nail.png')}}"></a>
+        <div>
+            <a class="textos">Nails</a>
+            <h4>Manicure e Pedicure</h4>
+            <p>    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </article>
+
+    <article class="servicos bgwhite radius">
+        <a href=""><img src="{{url_for('static' , filename='_imagens/megahair.png')}}"></a>
+        <div>
+            <a class="textos">Mega Hair</a>
+            <h4>Alongamento</h4>
+            <p>    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </article>
+
+    <article class="servicos bgwhite radius">
+        <a href=""><img src="{{url_for('static' , filename='_imagens/hair.png')}}"></a>
+        <div>
+            <a class="textos">Cabelos</a>
+            <h4>Luzes e coloração</h4>
+            <p>    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </article>
+
 </main>
 <!--fim principal-->
 
 <!--newslatter-->
-<section class="container newslatter">
+<section class="container newslatter bgGray">
 
+    <div class="title">
+        <h1>Inscreva-se</h1>
+        <h2>E receba nossas novidades no seu E-mail</h2>
+    </div>
+
+    <div class="form">
+        <form action="" type="post">
+            <input type="text" name="" class="radius">
+            <input type="submit" name="" value="Cadastro" class="radius btnewslatter" >
+        </form>
+
+    </div>
 </section>
 <!-- fim newslatter-->
-
-<
-<table border="1"; width="70%"class="container tabela bgGradient">
-    <tr>
-        <td>    
-            <h2><p>NOME</p></h2>
-        </td>
-        <td>    
-            <h2><p>IDADE</p></h2>
-        </td>
-        <td>    
-            <h2><p>E-MAIL</p></h2>
-        </td>
-        <td>    
-            <h2><p>TELEFONE</p></h2>
-        </td>
-    </tr>    
-    <tr>
-        <td>    
-            <p>Robson</p>
-        </td>
-        <td>    
-            <p>36</p>
-        </td>
-        <td>    
-            <p>spveiok@hotmail.com</p>
-        </td>
-        <td>    
-            <p>(11)99999-9999</p>
-        </td>
-    </tr> 
-</table> 
-
 
 <!-- roda pé-->
 <footer class="container roda pé bgGradient">
 
+    <div class="Icon">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="far fa-envelope"></i></a>
+        <p class="direitos">
+            copyright © 2019 todos os direitos reservados
+        </p>
+    </div>
+
 </footer>
 <!-- fim roda pé-->
+
+<script src="https://kit.fontawesome.com/3c571969c8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
