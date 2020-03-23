@@ -5,6 +5,12 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    font-weight: 300;
+    font-family: 'Lato'
+}
+
+body {
+    background-color: #FFB69D;
 }
 
 
@@ -19,13 +25,13 @@ img {
 max-width: none;
 }
 
+/** configuração padrao**/
 .container {
-    width: 100%;
-    float: left;
-    padding: 3% 4% ;    
+    width: 100% ;
+    padding: 3% 3% 3% 3% ;    
     text-align: center;
-    background: #FFF0F5;
-    margin-bottom: 5px;
+    background-color: #FFFAFA;
+    
 }
 
 .radius {
@@ -47,20 +53,23 @@ max-width: none;
     background-color: #ccc;
 }
 
+/**cabecalho**/
+    
 
 .logo {
     width: 56px;
     height: 56px;
     float: left;
-    background: url(_imagens/logomobile.png.png) center center/56px no-repeat;
+    background: url(_imagens/logo.png) center center/56px no-repeat;
 }
+
 
 .menu {
     display: none;
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: #000;
+    background-color: #000000;
     opacity: 0.9;
     top: 0;
     left: 0;
@@ -79,32 +88,36 @@ max-width: none;
     height: 56px;
     float: right;
     border-radius: 56px;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .menu ul {
     width: 100%;
     float: left;
-    text-align: center;
+    text-align: center;  
 }
 
 .menu ul li {
     padding: 2%;
 }
 
+
 .menu ul li a {
     font-size: 2em;
-    color: #fff;
+    color: #ffffff; 
+} 
 
-}
 /** BANNER **/
 
+.banner {
+    background: url(_imagens/banner.png) no-repeat fixed center center;
+}
 
 .buttons {
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 .title {
@@ -123,21 +136,18 @@ max-width: none;
 
 }
 
-.banner {
-    background: url(_imagens/banner.png);
-}
-
-
-.btn {
+.btbutton {
     width: 100%;
     margin-top: 2%;
     text-align: left;
-    padding: 3%;
-    font-size: 2em;
+    padding: 2%;
+    font-size: 1.5em;
+
 }
 
-.btn i {
+.btbutton i {
     float: right;
+    margin-top: 2%;
 }
 
 .btsobre {
@@ -160,7 +170,7 @@ max-width: none;
 }
 
 .servicos .textos a {
-    font-size: 3em;
+    font-size: 2em;
     color: #4B0082;
     font-weight: bold;
 }
@@ -204,7 +214,7 @@ max-width: none;
     padding: 3%;
 }
 
-.btnewslatter {
+.btNewslatter {
     margin-top: 3%;
     color: #333;
     font-weight: bold;
@@ -236,22 +246,4 @@ max-width: none;
 .direitos {
     margin-top: 3%;
     color: #fff;
-    opacity: 0.7;
-}
-
-@media screen and (min-width: 480px) {
-    .logo {
-        width: 56px;
-        height: 56px;
-        float: left;
-        background: url(_imagens/logo.png) center center no-repeat;
-    }
-
-
-    .btn {
-        width: 45%
-    }
-
-    .btsobre {
-        float: right;
-    }
+    opacity: 0.7;}

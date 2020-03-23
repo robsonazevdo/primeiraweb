@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    
-            
+<head>      
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href={{url_for('static' , filename="estilo.css")}} />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href={{url_for('static' , filename="estilo.css")}} />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 500px)" href={{url_for('static' , filename="estilo_500px.css")}} />
     <link rel="icon" href="{{url_for('static' , filename='_imagens/favicon')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <!--<link rel="styleshheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css">-->
-
-<body>
-
+   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>SUSANA AZEVEDO</title>
 
 </head>
 
+<body>
 
 <!--cabecalho inicio-->
-<header class="container cabecalho">
+<header class="container cabecalho ">
+
 <a href="index.html" class="logo"></a>
 
-<button class="btmenu bgGradient"><i class="fas fa-bars"></i>
-
+<button class="btmenu bgGradient"> <i class="fas fa-bars"></i>
 </button>    
 
-<nav class="menu">
-    <a href="" class="btclose"><i class="fas fa-times" aria-hidden="true"></i></a>
-    <ul>
-        <li><a href=""></a>Inicio</li>
-        <li><a href=""></a>Hair</li>
+    <nav class="menu">
+        <a href="#" class="btclose"><i class="fas fa-times" aria-hidden="true"></i></a>
         <ul>
-            <li><a href=""></a>Mega hair</li>
-            <li><a href=""></a>luzes</li> 
-            <li><a href=""></a>Alisamentos</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Hair</a></li>
+            <li><a href="#">Mega hair</a></li>
+            <li><a href="#">luzes</a></li> 
+            <li><a href="#">Alisamentos</a></li>
+            <li><a href="#">Nails</a></li>
+            <li><a href="#">Estética</a></li>
         </ul>
-        <li><a href=""></a>Nails</li>
-        <li><a href=""></a>Estética</li>
-    </ul>
-</nav>
+    </nav>
 
 </header>
 <!--fim cabecalho-->
@@ -48,22 +44,13 @@
 <div class="container banner">
 
     <div class="title"> 
-
-        <h2>
-        Sejam Bem Vindos! 
-        </h2>
-
-        <h3>
-        Espaço Susana Azevedo 
-        </h3>
-
+        <h2>Sejam Bem Vindos! </h2>
+        <h3>Espaço Susana Azevedo </h3>
     </div>
 
-    <div class="buttons" >
-
-        <button class="btn radius btcadastro bgwhite">Cadastro <i class="fas fa-arrow-right"></i></button>
-        <button class="btn bgBlack btsobre radius">Sobre <i class="far fa-question-circle"></i></button>
-
+    <div class="buttons">
+        <button class="btbutton  bgwhite btcadastro radius ">Cadastro <i class="fas fa-arrow-right"></i></button>
+        <button class="btbutton bgBlack btsobre radius">Sobre <i class="far fa-question-circle"></i></button>
     </div>
 
 </div>
@@ -73,9 +60,9 @@
 <main class="container conteudoprincipal">
 
     <article class="servicos bgwhite radius">
-        <a href=""><img src="{{url_for('static' , filename='_imagens/nail.png')}}"></a>
-        <div>
-            <a class="textos">Nails</a>
+        <a href="nails"><img src="{{url_for('static' , filename='_imagens/nail.png')}}"></a>
+        <div class="textos">
+            <a href="">Nails</a>
             <h4>Manicure e Pedicure</h4>
             <p>    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -86,9 +73,9 @@
     </article>
 
     <article class="servicos bgwhite radius">
-        <a href=""><img src="{{url_for('static' , filename='_imagens/megahair.png')}}"></a>
-        <div>
-            <a class="textos">Mega Hair</a>
+        <a href="megahair"><img src="{{url_for('static' , filename='_imagens/megahair.png')}}"></a>
+        <div class="textos">
+            <a href="">Mega Hair</a>
             <h4>Alongamento</h4>
             <p>    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -100,8 +87,8 @@
 
     <article class="servicos bgwhite radius">
         <a href=""><img src="{{url_for('static' , filename='_imagens/hair.png')}}"></a>
-        <div>
-            <a class="textos">Cabelos</a>
+        <div class="textos">
+            <a href="">Cabelos</a>
             <h4>Luzes e coloração</h4>
             <p>    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -125,7 +112,7 @@
     <div class="form">
         <form action="" type="post">
             <input type="text" name="" class="radius">
-            <input type="submit" name="" value="Cadastro" class="radius btnewslatter" >
+            <input type="submit" name="" value="Cadastro" class="radius btNewslatter" >
         </form>
 
     </div>
@@ -150,6 +137,19 @@
 <!-- fim roda pé-->
 
 <script src="https://kit.fontawesome.com/3c571969c8.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(".btmenu").click(function() {
+        $(".menu").show();
+    }  );
+</script>
+
+<script>
+    $(".btclose").click(function() {
+        $(".menu").hide();
+    }  );
+</script>
 </body>
 
 </html>
