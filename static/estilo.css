@@ -60,7 +60,7 @@ max-width: none;
     width: 56px;
     height: 56px;
     float: left;
-    background: url(_imagens/logo.png) center center/56px no-repeat;
+    background: url(_imagens/logomobile.png) center center/56px no-repeat;
 }
 
 
@@ -113,7 +113,7 @@ max-width: none;
 /** BANNER **/
 
 .banner {
-    background: url(_imagens/banner.png) no-repeat fixed center center;
+    background: url(_imagens/banner.png) no-repeat center center;
 }
 
 .buttons {

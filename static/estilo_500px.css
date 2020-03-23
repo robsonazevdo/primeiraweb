@@ -113,7 +113,7 @@ max-width: none;
 /** BANNER **/
 
 .banner {
-    background: url(_imagens/banner.png) no-repeat center center fixed;
+    background: url(_imagens/banner.png) no-repeat center center ;
 }
 
 .buttons {
